@@ -1,0 +1,43 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HorizontalCard from "../components/HorizontalCard.astro";
+---
+
+<BaseLayout title="Games" sideBarActiveItemID="games">
+
+    <div>
+        <div class="text-3xl w-full font-bold mb-5">Games</div>
+
+        <div class="mb-10 text-justify">
+          These are some of my games I have developed through the years. The video links are professional work. On my <a href="https://irisinterludio.itch.io/">itch.io</a> you can check some more games.
+        </div>
+      </div>
+
+      <HorizontalCard
+      title="Video - Games for Brainable.com"
+      img="/PawAttentionRecortada.png"
+      desc="Youtube video of 5 games that were uploaded to the site. These games were developed with Cocos Creator and Javascript."
+      url="https://youtu.be/O9aYmq85Ujk"
+      
+    />
+    
+    <HorizontalCard
+      title="Video - Automatic Strategy game prototype"
+      img="/Screenshot_20240218_064115.png"
+      desc="Youtube video of the last prototype I did for Brainanble.com. The game makes heavy use of the flood fill algorithm."
+      url="https://youtu.be/aMDQ4XKYaxg"
+    />
+    <HorizontalCard
+      title="Malrrabas Tower"
+      img="/Xa22u6.gif"
+      desc="First person 3D dungeon crawler game made with Phaser CE and Three.js, playable on Itch.io. The game also have turn based battles, scripted events and an automap system."
+      url="https://irisinterludio.itch.io/malrrabas-tower"
+    />
+    <HorizontalCard
+      title="Simple RPG prototype"
+      img="/Screenshot_20240218_065047.png"
+      desc="GitHub repo of a barebones top down RPG, with automatic random battles, made with Phaser CE. The game is hosted on the repo's GitHub Pages."
+      url="https://github.com/joseasv/phaserce-example"
+    />
+
+</BaseLayout>
